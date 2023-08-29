@@ -46,3 +46,28 @@ header > div {
 header > div:nth-child(3) {
   margin: 0 0 0 auto;
 }
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  div.grid-container {
+    grid-template-rows: 10% 75% 10% 5%;
+  }
+  nav {
+    grid-column: span 2;
+  }
+  main {
+    grid-column: span 8;
+  }
+}
+@media screen and (min-width: 992px) {
+  div.grid-container {
+    grid-template-rows: 10% 85% 5%;
+  }
+  nav {
+    grid-column: span 2;
+  }
+  main {
+    grid-column: span 6;
+  }
+  aside {
+    grid-column: span 2;
+  }
+}
