@@ -5,6 +5,10 @@
   font: 1em sans-serif;
   text-align: center;
 }
+body {
+  background: Black;
+}
+
 header,
 footer {
   background: Purple;
@@ -75,4 +79,22 @@ img.scale {
   width: 100%;
   height: auto;
   border: 5px dashed Purple;
+}
+div.flex-container {
+  display: flex;
+  justify-content: center;
+}
+p.screen-reader-text {
+  font: 2em sans-serif;
+  padding: 1em;
+  color: Thistle;
+}
+@media screen and (max-width: 600px) {
+  p.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+  }
 }
